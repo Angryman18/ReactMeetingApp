@@ -1,0 +1,107 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+}
+
+#child {
+    flex: 1;
+    text-align: center;
+}
+
+.inner div:nth-child(1) {
+    border-right: 2px solid;
+}
+
+.addtoFav {
+    margin: auto;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(5, 118, 153);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.added {
+    margin: auto;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(2, 155, 53);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.addtoFav:hover {
+    background-color: rgb(4, 86, 110);
+}
+
+.center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        margin: 20px 10px;
+    }
+    .addtoFav {
+        margin: auto;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background-color: rgb(5, 118, 153);
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .added {
+        margin: auto;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background-color: rgb(2, 155, 53);
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    
+}

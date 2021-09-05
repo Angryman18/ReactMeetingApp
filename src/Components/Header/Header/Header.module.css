@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px groove rgba(0,0,0,0.1);
+}
+
+.main {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo span#logo__text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.links {
+  flex: 2;
+  text-align: right;
+}
+
+.links ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.links ul li:hover {
+  background-color: rgb(255, 0, 0,0.6);
+  transition: 0.1s ease-in;
+  color: rgba(0,0,0,0.8);
+}
+
+.links__active {
+  color: rgb(0, 153, 255);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .logo {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(33, 2, 82);
+
+  }
+  
+  .logo span#logo__text {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  .links ul li {
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+}

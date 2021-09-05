@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import MainHeader from "./Components/Header/MainHeader";
+import "./App.css";
+import React from "react";
+import ContextProvider from "./store/meeting-context";
+import MeetingForm from "./Components/Middle/Addmeetup/MeetingForm";
+import AllMeetup from "./Components/Middle/Allmeetup/AllMeetup";
+import SubmissionMsg from "./Components/Middle/Addmeetup/SubmissionMsg";
+import FavoriteMeeting from "./Components/Middle/Favouritemeetup/FavouriteMeeting";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextProvider>
+      <MainHeader />
+      <Route exact path="/allmeetup">
+        <AllMeetup />
+      </Route>
+      <Route exact path="/addmeetup">
+        <MeetingForm />
+      </Route>
+      <Route path="/submittd">
+        <SubmissionMsg />
+      </Route>
+      <Route path="/favouritemeeting"> 
+        <FavoriteMeeting />
+      </Route>
+    </ContextProvider>
   );
 }
 
