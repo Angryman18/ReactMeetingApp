@@ -3,7 +3,7 @@ import style from "./FavoriteMeeting.module.css";
 
 const FavoriteMeetingComp = (props) => {
 
-    const {id, title, venue, detail} = props
+    const {title, venue, detail} = props
 
   return (
     <div className={style.content}>

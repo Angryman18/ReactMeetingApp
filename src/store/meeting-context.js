@@ -28,6 +28,8 @@ const Reducer = (state, actions) => {
         return item.id !== actions.id
       })
       return {...state, f_meeting: newFavMeeting}
+    default:
+      return state;
 
   }
 };

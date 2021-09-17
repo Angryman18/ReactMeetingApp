@@ -35,7 +35,7 @@ const AllMeetupComp = (props) => {
     } else {
       setButtonText("✔ Add to Favourite");
     }
-  }, [f_meeting]);
+  }, [f_meeting, id]);
 
   return (
     <div className={style.content}>

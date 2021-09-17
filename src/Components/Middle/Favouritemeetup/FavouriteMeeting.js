@@ -8,8 +8,8 @@ const FavouriteMeeting = () => {
 
   return (
     <div className={style.main}>
-      {f_meeting.map((item) => {
-        return <FavoriteMeetingComp key={item.id} {...item} />;
+      {f_meeting.map((item, idx) => {
+        return <FavoriteMeetingComp key={idx} {...item} />;
       })}
     </div>
   );

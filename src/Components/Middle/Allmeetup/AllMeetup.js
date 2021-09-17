@@ -7,9 +7,16 @@ const AllMeetup = () => {
   const { a_meeting } = React.useContext(MeetingContext);
   return (
     <div className={style.main}>
+      <AllMeetupComp
+        key="e1"
+        title="Business Meeting"
+        venue="Dubai"
+        detail="Price hike of raw materials"
+      />
       {a_meeting.map((item) => {
         return <AllMeetupComp key={item.id} {...item} />;
       })}
+      
     </div>
   );
 };

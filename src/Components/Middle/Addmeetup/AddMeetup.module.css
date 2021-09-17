@@ -9,7 +9,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 5px;
 }
 label {
@@ -74,4 +74,25 @@ label {
   font-size: 0.9rem;
   border-radius: 5px;
   box-shadow: 0px 10px 10px 1px rgba(65, 64, 64, 0.3);
+}
+
+
+@media (max-width: 480px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .inputStyle {
+    padding: 5px;
+    width: 80vw;
+    outline: none;
+    border: 2px solid rgb(228, 228, 228);
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
 }

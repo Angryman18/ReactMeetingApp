@@ -6,12 +6,16 @@ import MeetingForm from "./Components/Middle/Addmeetup/MeetingForm";
 import AllMeetup from "./Components/Middle/Allmeetup/AllMeetup";
 import SubmissionMsg from "./Components/Middle/Addmeetup/SubmissionMsg";
 import FavoriteMeeting from "./Components/Middle/Favouritemeetup/FavouriteMeeting";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
+import { Redirect } from "react-router";
 
 function App() {
   return (
     <ContextProvider>
       <MainHeader />
+      <Route exact path="/">
+        <Redirect to="/allmeetup" />
+      </Route>
       <Route exact path="/allmeetup">
         <AllMeetup />
       </Route>
